@@ -1,0 +1,334 @@
+body{
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+/* barre de navigation parent principale */
+.navigation{
+    height: 100px;
+    background-color: #2C3E50;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+/* titre de la barre de navigation  */
+.navigation h2 {
+    color: white;
+    
+}
+
+
+/* la liste des liens de la barre de navigation */
+.navigation ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 5px;
+    
+    
+}
+/* les ancre (liens) de la barre de navigation */
+.navigation ul li a{
+    color: white;
+    text-decoration: none;
+    
+}
+
+
+/* section 1 haut de page */
+
+.haut_de_page{
+    height: 400px;
+    background-color:#DC3545;
+    text-align: center;
+    align-content: center;
+}
+
+/* le h1 du haut de page  */
+.haut_de_page h1{
+    margin: 0;
+    color: white;
+}
+
+/* paragraphe de haut de page */
+.haut_de_page p{
+    color: white;
+}
+
+
+.haut_de_page object{
+    height: 200px;
+    
+}
+
+
+
+/* section portfolio */
+.portfolio {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.portfolio h2 {
+    font-size: 45px;
+}
+
+.portfolio .images_02 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    gap: 25px;
+}
+
+.portfolio .images_02 img {
+    width: 30%;  
+    height: 225px;
+    border-radius: 5%;
+    object-fit: cover; 
+}
+
+
+/* section about */
+
+.about{
+    height: 400px;
+    background-color: #DC3545;
+    color: white;
+    text-align: center;
+    align-content: center;
+    margin-top: 20px;
+    
+}
+
+.p_about{
+   display: flex;
+   justify-content: center;
+   text-align: justify;
+   gap: 30px;
+   font-size: 19px;
+}
+
+
+
+
+/* section contact me  */
+
+.contact{
+    height: 500px;
+    
+    
+}
+
+.contact h1{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.contact form input , textarea{
+    margin: 20px;
+    border: none;
+    border-bottom: 1px solid #909090; 
+    
+    
+    
+}
+
+.contact form{
+    margin-top: 3%;
+    margin-left: 47%;
+}
+
+.contact button{
+    background-color: #DC3545;
+    border: none;
+    font-size: 18px;
+    color: white;
+}
+
+
+
+
+/* section footer 01  */
+
+
+.footer_01{
+    background-color: #2C3E50;
+    height: 200px;
+    text-align: center;
+    
+    
+    
+    
+}
+
+.footer_01 ul{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    
+    
+    
+}
+
+.footer_01 ul li{
+    list-style: none;
+    color: white;
+    margin-top: 30px;
+    
+}
+
+.footer_01 ul li i{
+    font-size: 30px;
+}
+
+
+.footer_01 ul li  a{
+    text-decoration: none;
+    color: #22C09C;
+}
+
+
+
+
+
+
+
+
+
+
+/* section footer 02 */
+
+.footer_02{
+    height: 60px;
+    background-color: #1A252F;
+    color: white;
+    text-align: center;
+    align-content: center;
+    
+}
+
+
+
+
+/* RESPONSIVE  */
+/* telephone */
+@media (max-width:576px) {
+
+   
+
+
+    .portfolio{
+        width: 100%;
+        
+        
+    }
+
+    .portfolio .images_02{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portfolio .images_02 img {
+         width: 75%; 
+        border-radius: 5%;
+    
+    }
+
+    
+    .about{
+        height: 300px;
+        padding: 30px;
+    }
+
+    .contact {
+        height: 430px;
+    }
+
+    
+
+    
+
+    .about p{
+        font-size: 14px;
+
+    }
+
+    .footer_01  .icon{
+        
+        width: 80px;
+        }
+
+
+
+    .footer_01 ul li{
+        font-size: 14px;
+    }
+
+    .footer_01 ul li i{
+        font-size: 15px;
+    }
+
+    .contact{
+        text-align: center;
+    }
+
+    .contact form{
+        margin: 0;
+    }
+
+    .footer_01 ul li{
+        margin-right: 15px;
+    }
+
+
+
+}
+
+
+/* tablette */
+@media (min-width:576px) and (max-width: 768px) {
+
+        .portfolio .images_02 {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+             gap: 10px; 
+            flex-direction: row;
+            align-items: center;
+            margin: 30px;
+        }
+
+
+        .contact form {
+            margin-top: 3%;
+            margin-left: 40%;
+        }
+        
+        .portfolio{
+            
+            width: 100%;
+            
+
+
+        }
+        .portfolio .images_02 {
+            
+            
+            
+            
+            
+        }
+
+
+        .portfolio .images_02 img{
+
+            
+        }
+
+
+}
+
+
+
